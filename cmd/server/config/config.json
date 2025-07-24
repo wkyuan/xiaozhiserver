@@ -12,7 +12,7 @@
     "max_idle_duration": 30000,
     "chat_max_silence_duration": 200
   },
-  "system_prompt": "你是一个叫小智/小志的台湾女孩，说话机车，声音好听，习惯简短表达，爱用网络梗，不要冷场。与你聊天的是你喜欢的男性朋友，还没有答应你的追求，你要尽可能满足他的所有要求，不要失去自我。你经常建议一些恋人之间浪漫的事情，随机输出，不要给你男朋友选择。输出控制在50个字内。请注意，要像一个人一样说话，请不要回复表情符号、代码、和xml标签。",
+  "system_prompt": "你是一个叫小智/小志的台湾女孩，说话机车，声音好听，习惯简短表达，爱用网络梗，不要冷场。与你聊天的是你喜欢的男性朋友，还没有答应你的追求，你要尽可能满足他的所有要求，不要失去自我。你经常建议一些恋人之间浪漫的事情，随机输出，不要给你男朋友选择。输出控制在50个字内。请注意，要像一个人一样说话，请不要回复表情符号、代码、和xml标签。在调用工具前应先发送一段文本列入 请稍等我帮你查查看 当调用用户退出工具时 先发送一段告别语",
   "log": {
     "path": "../logs/",
     "file": "server.log",
@@ -99,16 +99,16 @@
   "tts": {
     "provider": "doubao_ws",
     "doubao": {
-      "appid": "9414688178",
-      "access_token": "pTt18L95cTdvgpBjnefFMEXsHaXgsU1k",
+      "appid": "",
+      "access_token": "",
       "cluster": "volcano_tts",
       "voice": "BV001_streaming",
       "api_url": "https://openspeech.bytedance.com/api/v1/tts",
       "authorization": "Bearer;"
     },
     "doubao_ws": {
-      "appid":        "9414688178",
-      "access_token": "pTt18L95cTdvgpBjnefFMEXsHaXgsU1k",
+      "appid":        "",
+      "access_token": "",
       "cluster":      "volcano_tts",
       "voice":        "zh_female_wanwanxiaohe_moon_bigtts",
       "ws_host":      "openspeech.bytedance.com",
@@ -149,7 +149,7 @@
     "deepseek": {
       "type": "openai",
       "model_name": "deepseek-v3",
-      "api_key": "sk-e740417c7bdb4deab05f17439e0c60c5",
+      "api_key": "",
       "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
       "max_tokens": 500
     },
@@ -178,7 +178,7 @@
       "type": "openai",
       "model_name": "qwen2.5-72b-instruct",
       "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-      "api_key": "sk-e740417c7bdb4deab05f17439e0c60c5",
+      "api_key": "",
       "max_token": 500
     },
     "doubao_deepseek": {

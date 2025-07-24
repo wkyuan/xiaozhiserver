@@ -99,16 +99,16 @@
   "tts": {
     "provider": "doubao_ws",
     "doubao": {
-      "appid": "9414688178",
-      "access_token": "pTt18L95cTdvgpBjnefFMEXsHaXgsU1k",
+      "appid": "",
+      "access_token": "",
       "cluster": "volcano_tts",
       "voice": "BV001_streaming",
       "api_url": "https://openspeech.bytedance.com/api/v1/tts",
       "authorization": "Bearer;"
     },
     "doubao_ws": {
-      "appid":        "9414688178",
-      "access_token": "pTt18L95cTdvgpBjnefFMEXsHaXgsU1k",
+      "appid":        "",
+      "access_token": "",
       "cluster":      "volcano_tts",
       "voice":        "zh_female_wanwanxiaohe_moon_bigtts",
       "ws_host":      "openspeech.bytedance.com",
@@ -149,7 +149,7 @@
     "deepseek": {
       "type": "openai",
       "model_name": "deepseek-v3",
-      "api_key": "sk-e740417c7bdb4deab05f17439e0c60c5",
+      "api_key": "",
       "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
       "max_tokens": 500
     },
@@ -178,7 +178,7 @@
       "type": "openai",
       "model_name": "qwen2.5-72b-instruct",
       "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-      "api_key": "sk-e740417c7bdb4deab05f17439e0c60c5",
+      "api_key": "",
       "max_token": 500
     },
     "doubao_deepseek": {

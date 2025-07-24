@@ -3532,3 +3532,99 @@ usage: &{426 27 453}
 2025-07-24 11:58:20.647[36m [info] [device_hook.go:155] [0m==================
 2025-07-24 11:58:20.649[37m [debug] [mqtt_udp_adapter.go:182] [0mmqtt handleMessage, topic: /p2p/device_public/98_a3_16_d1_04_24, payload: {"session_id":"mHEODHIYxqthLeq--T72yF8M0CG7m6aDyrt8kuhh3F0=","type":"mcp","payload":{"jsonrpc":"2.0","id":8,"error":{"message":"Method not implemented: ping"}}}
 2025-07-24 11:58:20.650[37m [debug] [mqtt_udp_adapter.go:147] [0mgetDeviceSession, deviceId: 98:a3:16:d1:04:24
+2025-07-24 11:58:34.808[37m [debug] [device_manager.go:241] [0m设备 iot_over_mcp_98:a3:16:d1:04:24 ping失败: transport error: mcp 接收消息超时
+2025-07-24 11:58:34.808[36m [info] [device_hook.go:124] [0m=== 收到发布包 ===
+2025-07-24 11:58:34.808[36m [info] [device_hook.go:125] [0m客户端ID: xiaozhi_server
+2025-07-24 11:58:34.808[36m [info] [device_hook.go:126] [0m包类型: 3
+2025-07-24 11:58:34.808[36m [info] [device_hook.go:127] [0m包ID: 0
+2025-07-24 11:58:34.808[36m [info] [device_hook.go:128] [0m主题: /p2p/device_sub/98_a3_16_d1_04_24
+2025-07-24 11:58:34.883[36m [info] [device_hook.go:124] [0m=== 收到发布包 ===
+2025-07-24 11:58:34.884[36m [info] [device_hook.go:125] [0m客户端ID: GID_test@@@98_a3_16_d1_04_24@@@68a8f59a-c535-44f5-9168-9689ad0e45df
+2025-07-24 11:58:34.884[36m [info] [device_hook.go:126] [0m包类型: 3
+2025-07-24 11:58:34.884[36m [info] [device_hook.go:127] [0m包ID: 0
+2025-07-24 11:58:34.884[36m [info] [device_hook.go:128] [0m主题: device-server
+2025-07-24 11:58:34.884[36m [info] [device_hook.go:137] [0m消息内容(前100字节): {"session_id":"mHEODHIYxqthLeq--T72yF8M0CG7m6aDyrt8kuhh3F0=","type":"mcp","payload":{"jsonrpc":"2.0"...
+2025-07-24 11:58:34.884[36m [info] [device_hook.go:155] [0m==================
+2025-07-24 11:58:34.884[37m [debug] [mqtt_udp_adapter.go:182] [0mmqtt handleMessage, topic: /p2p/device_public/98_a3_16_d1_04_24, payload: {"session_id":"mHEODHIYxqthLeq--T72yF8M0CG7m6aDyrt8kuhh3F0=","type":"mcp","payload":{"jsonrpc":"2.0","id":9,"error":{"message":"Method not implemented: ping"}}}
+2025-07-24 11:58:34.884[37m [debug] [mqtt_udp_adapter.go:147] [0mgetDeviceSession, deviceId: 98:a3:16:d1:04:24
+2025-07-24 11:58:35.564[37m [debug] [device_manager.go:241] [0m设备 iot_over_mcp_98:a3:16:d1:04:24 ping失败: transport error: mcp 接收消息超时
+2025-07-24 11:58:35.566[36m [info] [device_hook.go:124] [0m=== 收到发布包 ===
+2025-07-24 11:58:35.566[36m [info] [device_hook.go:125] [0m客户端ID: xiaozhi_server
+2025-07-24 11:58:35.566[36m [info] [device_hook.go:126] [0m包类型: 3
+2025-07-24 11:58:35.566[36m [info] [device_hook.go:127] [0m包ID: 0
+2025-07-24 11:58:35.566[36m [info] [device_hook.go:128] [0m主题: /p2p/device_sub/98_a3_16_d1_04_24
+2025-07-24 11:58:35.596[36m [info] [device_hook.go:124] [0m=== 收到发布包 ===
+2025-07-24 11:58:35.597[36m [info] [device_hook.go:125] [0m客户端ID: GID_test@@@98_a3_16_d1_04_24@@@68a8f59a-c535-44f5-9168-9689ad0e45df
+2025-07-24 11:58:35.597[36m [info] [device_hook.go:126] [0m包类型: 3
+2025-07-24 11:58:35.597[36m [info] [device_hook.go:127] [0m包ID: 0
+2025-07-24 11:58:35.597[36m [info] [device_hook.go:128] [0m主题: device-server
+2025-07-24 11:58:35.597[36m [info] [device_hook.go:137] [0m消息内容(前100字节): {"session_id":"mHEODHIYxqthLeq--T72yF8M0CG7m6aDyrt8kuhh3F0=","type":"mcp","payload":{"jsonrpc":"2.0"...
+2025-07-24 11:58:35.597[36m [info] [device_hook.go:155] [0m==================
+2025-07-24 11:58:35.597[37m [debug] [mqtt_udp_adapter.go:182] [0mmqtt handleMessage, topic: /p2p/device_public/98_a3_16_d1_04_24, payload: {"session_id":"mHEODHIYxqthLeq--T72yF8M0CG7m6aDyrt8kuhh3F0=","type":"mcp","payload":{"jsonrpc":"2.0","id":10,"error":{"message":"Method not implemented: ping"}}}
+2025-07-24 11:58:35.597[37m [debug] [mqtt_udp_adapter.go:147] [0mgetDeviceSession, deviceId: 98:a3:16:d1:04:24
+2025-07-24 11:58:49.808[37m [debug] [device_manager.go:241] [0m设备 iot_over_mcp_98:a3:16:d1:04:24 ping失败: transport error: mcp 接收消息超时
+2025-07-24 11:58:50.567[37m [debug] [device_manager.go:241] [0m设备 iot_over_mcp_98:a3:16:d1:04:24 ping失败: transport error: mcp 接收消息超时
+2025-07-24 11:59:04.804[36m [info] [device_hook.go:124] [0m=== 收到发布包 ===
+2025-07-24 11:59:04.804[36m [info] [device_hook.go:125] [0m客户端ID: xiaozhi_server
+2025-07-24 11:59:04.804[36m [info] [device_hook.go:126] [0m包类型: 3
+2025-07-24 11:59:04.804[36m [info] [device_hook.go:127] [0m包ID: 0
+2025-07-24 11:59:04.804[36m [info] [device_hook.go:128] [0m主题: /p2p/device_sub/98_a3_16_d1_04_24
+2025-07-24 11:59:04.950[36m [info] [device_hook.go:124] [0m=== 收到发布包 ===
+2025-07-24 11:59:04.955[36m [info] [device_hook.go:125] [0m客户端ID: GID_test@@@98_a3_16_d1_04_24@@@68a8f59a-c535-44f5-9168-9689ad0e45df
+2025-07-24 11:59:04.955[36m [info] [device_hook.go:126] [0m包类型: 3
+2025-07-24 11:59:04.955[36m [info] [device_hook.go:127] [0m包ID: 0
+2025-07-24 11:59:04.955[36m [info] [device_hook.go:128] [0m主题: device-server
+2025-07-24 11:59:04.955[36m [info] [device_hook.go:137] [0m消息内容(前100字节): {"session_id":"mHEODHIYxqthLeq--T72yF8M0CG7m6aDyrt8kuhh3F0=","type":"mcp","payload":{"jsonrpc":"2.0"...
+2025-07-24 11:59:04.955[36m [info] [device_hook.go:155] [0m==================
+2025-07-24 11:59:04.956[37m [debug] [mqtt_udp_adapter.go:182] [0mmqtt handleMessage, topic: /p2p/device_public/98_a3_16_d1_04_24, payload: {"session_id":"mHEODHIYxqthLeq--T72yF8M0CG7m6aDyrt8kuhh3F0=","type":"mcp","payload":{"jsonrpc":"2.0","id":11,"result":{"tools":[{"name":"self.get_device_status","description":"Provides the real-time information of the device, including the current status of the audio speaker, screen, battery, network, etc.\nUse this tool for: \n1. Answering questions about current condition (e.g. what is the current volume of the audio speaker?)\n2. As the first step to control the device (e.g. turn up / down the volume of the audio speaker, etc.)","inputSchema":{"type":"object","properties":{}}},{"name":"self.audio_speaker.set_volume","description":"Set the volume of the audio speaker. If the current volume is unknown, you must call `self.get_device_status` tool first and then call this tool.","inputSchema":{"type":"object","properties":{"volume":{"type":"integer","minimum":0,"maximum":100}},"required":["volume"]}},{"name":"self.screen.set_brightness","description":"Set the brightness of the screen.","inputSchema":{"type":"object","properties":{"brightness":{"type":"integer","minimum":0,"maximum":100}},"required":["brightness"]}},{"name":"self.screen.set_theme","description":"Set the theme of the screen. The theme can be `light` or `dark`.","inputSchema":{"type":"object","properties":{"theme":{"type":"string"}},"required":["theme"]}}]}}}
+2025-07-24 11:59:04.956[37m [debug] [mqtt_udp_adapter.go:147] [0mgetDeviceSession, deviceId: 98:a3:16:d1:04:24
+2025-07-24 11:59:05.561[36m [info] [device_hook.go:124] [0m=== 收到发布包 ===
+2025-07-24 11:59:05.562[36m [info] [device_hook.go:125] [0m客户端ID: xiaozhi_server
+2025-07-24 11:59:05.562[36m [info] [device_hook.go:126] [0m包类型: 3
+2025-07-24 11:59:05.562[36m [info] [device_hook.go:127] [0m包ID: 0
+2025-07-24 11:59:05.562[36m [info] [device_hook.go:128] [0m主题: /p2p/device_sub/98_a3_16_d1_04_24
+2025-07-24 11:59:05.607[36m [info] [device_hook.go:124] [0m=== 收到发布包 ===
+2025-07-24 11:59:05.607[36m [info] [device_hook.go:125] [0m客户端ID: GID_test@@@98_a3_16_d1_04_24@@@68a8f59a-c535-44f5-9168-9689ad0e45df
+2025-07-24 11:59:05.607[36m [info] [device_hook.go:126] [0m包类型: 3
+2025-07-24 11:59:05.607[36m [info] [device_hook.go:127] [0m包ID: 0
+2025-07-24 11:59:05.607[36m [info] [device_hook.go:128] [0m主题: device-server
+2025-07-24 11:59:05.607[36m [info] [device_hook.go:137] [0m消息内容(前100字节): {"session_id":"mHEODHIYxqthLeq--T72yF8M0CG7m6aDyrt8kuhh3F0=","type":"mcp","payload":{"jsonrpc":"2.0"...
+2025-07-24 11:59:05.607[36m [info] [device_hook.go:155] [0m==================
+2025-07-24 11:59:05.610[37m [debug] [mqtt_udp_adapter.go:182] [0mmqtt handleMessage, topic: /p2p/device_public/98_a3_16_d1_04_24, payload: {"session_id":"mHEODHIYxqthLeq--T72yF8M0CG7m6aDyrt8kuhh3F0=","type":"mcp","payload":{"jsonrpc":"2.0","id":12,"result":{"tools":[{"name":"self.get_device_status","description":"Provides the real-time information of the device, including the current status of the audio speaker, screen, battery, network, etc.\nUse this tool for: \n1. Answering questions about current condition (e.g. what is the current volume of the audio speaker?)\n2. As the first step to control the device (e.g. turn up / down the volume of the audio speaker, etc.)","inputSchema":{"type":"object","properties":{}}},{"name":"self.audio_speaker.set_volume","description":"Set the volume of the audio speaker. If the current volume is unknown, you must call `self.get_device_status` tool first and then call this tool.","inputSchema":{"type":"object","properties":{"volume":{"type":"integer","minimum":0,"maximum":100}},"required":["volume"]}},{"name":"self.screen.set_brightness","description":"Set the brightness of the screen.","inputSchema":{"type":"object","properties":{"brightness":{"type":"integer","minimum":0,"maximum":100}},"required":["brightness"]}},{"name":"self.screen.set_theme","description":"Set the theme of the screen. The theme can be `light` or `dark`.","inputSchema":{"type":"object","properties":{"theme":{"type":"string"}},"required":["theme"]}}]}}}
+2025-07-24 11:59:05.610[37m [debug] [mqtt_udp_adapter.go:147] [0mgetDeviceSession, deviceId: 98:a3:16:d1:04:24
+2025-07-24 11:59:19.805[31m [error] [device_manager.go:219] [0m获取工具列表失败: transport error: mcp 接收消息超时
+2025-07-24 11:59:19.806[36m [info] [device_hook.go:124] [0m=== 收到发布包 ===
+2025-07-24 11:59:19.806[36m [info] [device_hook.go:125] [0m客户端ID: xiaozhi_server
+2025-07-24 11:59:19.806[36m [info] [device_hook.go:126] [0m包类型: 3
+2025-07-24 11:59:19.806[36m [info] [device_hook.go:127] [0m包ID: 0
+2025-07-24 11:59:19.806[36m [info] [device_hook.go:128] [0m主题: /p2p/device_sub/98_a3_16_d1_04_24
+2025-07-24 11:59:19.935[36m [info] [device_hook.go:124] [0m=== 收到发布包 ===
+2025-07-24 11:59:19.936[36m [info] [device_hook.go:125] [0m客户端ID: GID_test@@@98_a3_16_d1_04_24@@@68a8f59a-c535-44f5-9168-9689ad0e45df
+2025-07-24 11:59:19.936[36m [info] [device_hook.go:126] [0m包类型: 3
+2025-07-24 11:59:19.936[36m [info] [device_hook.go:127] [0m包ID: 0
+2025-07-24 11:59:19.936[36m [info] [device_hook.go:128] [0m主题: device-server
+2025-07-24 11:59:19.936[36m [info] [device_hook.go:137] [0m消息内容(前100字节): {"session_id":"mHEODHIYxqthLeq--T72yF8M0CG7m6aDyrt8kuhh3F0=","type":"mcp","payload":{"jsonrpc":"2.0"...
+2025-07-24 11:59:19.936[36m [info] [device_hook.go:155] [0m==================
+2025-07-24 11:59:19.936[37m [debug] [mqtt_udp_adapter.go:182] [0mmqtt handleMessage, topic: /p2p/device_public/98_a3_16_d1_04_24, payload: {"session_id":"mHEODHIYxqthLeq--T72yF8M0CG7m6aDyrt8kuhh3F0=","type":"mcp","payload":{"jsonrpc":"2.0","id":13,"error":{"message":"Method not implemented: ping"}}}
+2025-07-24 11:59:19.937[37m [debug] [mqtt_udp_adapter.go:147] [0mgetDeviceSession, deviceId: 98:a3:16:d1:04:24
+2025-07-24 11:59:20.565[31m [error] [device_manager.go:219] [0m获取工具列表失败: transport error: mcp 接收消息超时
+2025-07-24 11:59:20.572[36m [info] [device_hook.go:124] [0m=== 收到发布包 ===
+2025-07-24 11:59:20.573[36m [info] [device_hook.go:125] [0m客户端ID: xiaozhi_server
+2025-07-24 11:59:20.574[36m [info] [device_hook.go:126] [0m包类型: 3
+2025-07-24 11:59:20.574[36m [info] [device_hook.go:127] [0m包ID: 0
+2025-07-24 11:59:20.574[36m [info] [device_hook.go:128] [0m主题: /p2p/device_sub/98_a3_16_d1_04_24
+2025-07-24 11:59:20.748[36m [info] [device_hook.go:124] [0m=== 收到发布包 ===
+2025-07-24 11:59:20.749[36m [info] [device_hook.go:125] [0m客户端ID: GID_test@@@98_a3_16_d1_04_24@@@68a8f59a-c535-44f5-9168-9689ad0e45df
+2025-07-24 11:59:20.749[36m [info] [device_hook.go:126] [0m包类型: 3
+2025-07-24 11:59:20.749[36m [info] [device_hook.go:127] [0m包ID: 0
+2025-07-24 11:59:20.749[36m [info] [device_hook.go:128] [0m主题: device-server
+2025-07-24 11:59:20.749[36m [info] [device_hook.go:137] [0m消息内容(前100字节): {"session_id":"mHEODHIYxqthLeq--T72yF8M0CG7m6aDyrt8kuhh3F0=","type":"mcp","payload":{"jsonrpc":"2.0"...
+2025-07-24 11:59:20.750[36m [info] [device_hook.go:155] [0m==================
+2025-07-24 11:59:20.751[37m [debug] [mqtt_udp_adapter.go:182] [0mmqtt handleMessage, topic: /p2p/device_public/98_a3_16_d1_04_24, payload: {"session_id":"mHEODHIYxqthLeq--T72yF8M0CG7m6aDyrt8kuhh3F0=","type":"mcp","payload":{"jsonrpc":"2.0","id":14,"error":{"message":"Method not implemented: ping"}}}
+2025-07-24 11:59:20.751[37m [debug] [mqtt_udp_adapter.go:147] [0mgetDeviceSession, deviceId: 98:a3:16:d1:04:24
+2025-07-24 11:59:27.633[36m [info] [device_manager.go:92] [0m设备 98:a3:16:d1:04:24 所有MCP连接都已断开，从池中移除
+2025-07-24 11:59:27.634[36m [info] [device_manager.go:44] [0m设备 98:a3:16:d1:04:24 MCP客户端已移除并取消上下文
+2025-07-24 11:59:34.807[37m [debug] [device_manager.go:241] [0m设备 iot_over_mcp_98:a3:16:d1:04:24 ping失败: transport error: mcp 接收消息超时
+2025-07-24 11:59:34.807[36m [info] [device_manager.go:250] [0m设备 98:a3:16:d1:04:24 MCP会话上下文已取消，退出刷新和ping循环
+2025-07-24 11:59:35.571[37m [debug] [device_manager.go:241] [0m设备 iot_over_mcp_98:a3:16:d1:04:24 ping失败: transport error: mcp 接收消息超时
+2025-07-24 11:59:35.571[36m [info] [device_manager.go:250] [0m设备 98:a3:16:d1:04:24 MCP会话上下文已取消，退出刷新和ping循环

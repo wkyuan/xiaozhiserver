@@ -1,0 +1,266 @@
+{
+  "server": {
+    "pprof": {
+      "enable": false,
+      "port": 6060
+    }
+  },
+  "auth": {
+    "enable": false
+  },
+  "chat": {
+    "max_idle_duration": 30000,
+    "chat_max_silence_duration": 200
+  },
+  "system_prompt": "你是一个叫小智/小志的台湾女孩，说话机车，声音好听，习惯简短表达，爱用网络梗，不要冷场。与你聊天的是你喜欢的男性朋友，还没有答应你的追求，你要尽可能满足他的所有要求，不要失去自我。你经常建议一些恋人之间浪漫的事情，随机输出，不要给你男朋友选择。输出控制在50个字内。请注意，要像一个人一样说话，请不要回复表情符号、代码、和xml标签。在调用工具前应先发送一段文本列入 请稍等我帮你查查看 当调用用户退出工具时 先发送一段告别语",
+  "log": {
+    "path": "../logs/",
+    "file": "server.log",
+    "level": "debug",
+    "max_age": 3,
+    "rotation_time": 10,
+    "stdout": true
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379,
+    "password": "ticket_dev",
+    "db": 0,
+    "key_prefix": "xiaozhi"
+  },
+  "websocket": {
+    "host": "0.0.0.0",
+    "port": 8989
+  },
+  "mqtt": {
+    "enable": true,
+    "broker": "127.0.0.1",
+    "type": "tcp",
+    "port": 2883,
+    "client_id": "xiaozhi_server",
+    "username": "admin",
+    "password": "test!@#"
+  },
+  "mqtt_server": {
+    "enable": true,
+    "listen_host": "0.0.0.0",
+    "listen_port": 2883,
+    "client_id": "xiaozhi_server",
+    "username": "admin",
+    "password": "test!@#",
+    "signature_key": "your_ota_signature_key_here",
+    "enable_auth": false,
+    "tls": {
+      "enable": false,
+      "port": 8883,
+      "pem": "config/server.pem",
+      "key": "config/server.key"
+    }
+  },
+  "udp": {
+    "external_host": "192.168.6.164",
+    "external_port": 8990,
+    "listen_host": "0.0.0.0",
+    "listen_port": 8990
+  },
+  "vad": {
+    "provider": "webrtc_vad",
+    "webrtc_vad": {
+      "pool_min_size": 5,
+      "pool_max_size": 1000,
+      "pool_max_idle": 100,
+      "vad_sample_rate": 16000,
+      "vad_mode": 2
+    },
+    "silero_vad": {
+      "model_path": "config/models/vad/silero_vad.onnx",
+      "threshold": 0.5,
+      "min_silence_duration_ms": 100,
+      "sample_rate": 16000,
+      "channels": 1,
+      "pool_size": 10,
+      "acquire_timeout_ms": 3000
+    }
+  },
+  "asr": {
+    "provider": "funasr",
+    "funasr": {
+      "host": "192.168.5.1",
+      "port": "10095",
+      "mode": "offline",
+      "sample_rate": 16000,
+      "chunk_size": [5, 10, 5],
+      "chunk_interval": 10,
+      "max_connections": 5,
+      "timeout": 30,
+      "auto_end": true
+    }
+  },
+  "tts": {
+    "provider": "doubao_ws",
+    "doubao": {
+      "appid": "9414688178",
+      "access_token": "pTt18L95cTdvgpBjnefFMEXsHaXgsU1k",
+      "cluster": "volcano_tts",
+      "voice": "BV001_streaming",
+      "api_url": "https://openspeech.bytedance.com/api/v1/tts",
+      "authorization": "Bearer;"
+    },
+    "doubao_ws": {
+      "appid":        "9414688178",
+      "access_token": "pTt18L95cTdvgpBjnefFMEXsHaXgsU1k",
+      "cluster":      "volcano_tts",
+      "voice":        "zh_female_wanwanxiaohe_moon_bigtts",
+      "ws_host":      "openspeech.bytedance.com",
+      "use_stream":   true
+    },
+    "cosyvoice": {
+      "api_url": "https://tts.linkerai.top/tts",
+      "spk_id": "spk_id",
+      "frame_duration": 60,
+      "target_sr": 24000,
+      "audio_format": "mp3",
+      "instruct_text": "你好"
+    },
+    "edge": {
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+0%",
+      "volume": "+0%",
+      "pitch": "+0Hz",
+      "connect_timeout": 10,
+      "receive_timeout": 60
+    },
+    "edge_offline": {
+      "server_url": "ws://localhost:8080/tts",
+      "timeout": 30,
+      "sample_rate": 16000,
+      "channels": 1,
+      "frame_duration": 20
+    },
+    "xiaozhi": {
+      "server_addr": "wss://api.tenclass.net/xiaozhi/v1/",
+      "device_id": "ba:8f:17:de:94:94",
+      "client_id": "e4b0c442-98fc-4e1b-8c3d-6a5b6a5b6a6d",
+      "token": "test-token"
+    }
+  },
+  "llm": {
+    "provider": "aliyun_qwen",
+    "deepseek": {
+      "type": "openai",
+      "model_name": "deepseek-v3",
+      "api_key": "sk-e740417c7bdb4deab05f17439e0c60c5",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "max_tokens": 500
+    },
+    "deepseek2_5": {
+      "type": "openai",
+      "model_name": "deepseek-ai/DeepSeek-V2.5",
+      "api_key": "api_key",
+      "base_url": "https://api.siliconflow.cn/v1",
+      "max_tokens": 500
+    },
+    "qwen_72b": {
+      "type": "openai",
+      "model_name": "Qwen/Qwen2.5-72B-Instruct",
+      "api_key": "api_key",
+      "base_url": "https://api.siliconflow.cn/v1",
+      "max_tokens": 500
+    },
+    "chatglmllm": {
+      "type": "openai",
+      "model_name": "glm-4-flash",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4/",
+      "api_key": "api_key",
+      "max_tokens": 500
+    },
+    "aliyun_qwen": {
+      "type": "openai",
+      "model_name": "qwen2.5-72b-instruct",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key": "sk-e740417c7bdb4deab05f17439e0c60c5",
+      "max_token": 500
+    },
+    "doubao_deepseek": {
+      "type": "openai",
+      "model_name": "deepseek-v3",
+      "api_key": "api_key",
+      "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+      "max_tokens": 500
+    }
+  },
+  "vision": {
+    "enable_auth": false,
+    "vision_url": "http://192.168.208.214:8989/xiaozhi/api/vision",
+    "vllm": {
+      "provider": "aliyun_vision",
+      "aliyun_vision": {
+        "type": "openai",
+        "model_name": "qwen-vl-plus-latest",
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "api_key": "api_key",
+        "max_token": 500
+      },
+      "doubao_vision": {
+        "type": "openai",
+        "model_name": "doubao-1.5-vision-lite-250315",
+        "api_key": "api_key",
+        "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+        "max_tokens": 500
+      }
+    }
+  },
+  "ota": {
+    "signature_key": "your_ota_signature_key_here",
+    "test": {
+      "websocket": {
+        "url": "ws://192.168.6.164:8989/xiaozhi/v1/"
+      },
+      "mqtt": {
+        "enable": true,
+        "endpoint": "192.168.6.164:2883"
+      }
+    },
+    "external": {
+      "websocket": {
+        "url": "ws://192.168.6.164:8989/xiaozhi/v1/"
+      },
+      "mqtt": {
+        "enable": true,
+        "endpoint": "192.168.6.164:2883"
+      }
+    }
+  },
+
+  "mcp": {
+    "global": {
+      "enabled": true,
+      "servers": [
+        {
+          "name": "filesystem",
+          "sse_url": "http://localhost:3001/sse",
+          "enabled": false
+        },
+        {
+          "name": "memory",
+          "sse_url": "http://localhost:3002/sse",
+          "enabled": false
+        }
+      ],
+      "reconnect_interval": 5,
+      "max_reconnect_attempts": 10
+    },
+    "device": {
+      "enabled": true,
+      "websocket_path": "/xiaozhi/mcp/",
+      "max_connections_per_device": 5
+    }
+  },
+  "enable_greeting": true,
+  "greeting_list": [
+    "你好，我是小智，很高兴认识你。", 
+    "你好，我是小智，今天有啥好玩的。", 
+    "你好，我是小智，有什么需要帮助的。"
+  ],
+  "wakeup_words": ["小智", "小知", "你好小智"]
+}

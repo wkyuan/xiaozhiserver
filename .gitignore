@@ -1,0 +1,6 @@
+*.exe
+*.log
+*.pem
+*.key
+config_shijingbo.json
+__debug_bin*
